@@ -7,8 +7,10 @@ hadoop-multiple-streaming includes Hadoop-Streaming. For example:
 
 
     hadoop jar hadoop-multiple-streaming.jar \  
+      -libjars "mypackage.jar" \
       -input myInputDirs \  
-      -multiple "outputDir1|mapper1.sh|reducer1.sh" \  
-      -multiple "outputDir2|mapper2.py|reducer2.py" \  
-      -multiple "outputDir3|/bin/cat|/bin/wc"
+      -multiple "outputDir1|mypackage.Mapper|mypackage.Reducer" \  
+      -multiple "outputDir2|mapper2.sh|reducer2.sh" \  
+      -multiple "outputDir3|mapper3.py|reducer3.py" \  
+      -multiple "outputDir4|/bin/cat|/bin/wc"
       
