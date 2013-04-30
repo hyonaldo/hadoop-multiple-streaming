@@ -1,7 +1,6 @@
 hadoop-multiple-streaming
 =========================
-hadoop-multiple-streaming includes [Hadoop-Streaming](http://hadoop.apache.org/docs/r1.1.2/streaming.html).  
-hadoop-multiple-streaming is an addition to the [Hadoop-Streaming](http://hadoop.apache.org/docs/r1.1.2/streaming.html) which is a utility that comes with the [Hadoop distribution](http://hadoop.apache.org/).  
+hadoop-multiple-streaming extends [Hadoop-Streaming](http://hadoop.apache.org/docs/r1.1.2/streaming.html) which is a utility that comes with the [Hadoop distribution](http://hadoop.apache.org/).  
 This utility allows you to not only do [Hadoop-Streaming](http://hadoop.apache.org/docs/r1.1.2/streaming.html), but also create and run 'multiple' Map/Reduce jobs for 'one' input with any executable or scripts. For example:
 
     hadoop jar hadoop-multiple-streaming.jar \  
