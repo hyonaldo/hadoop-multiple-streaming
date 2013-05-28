@@ -18,9 +18,14 @@
 
 package org.apache.hadoop.streaming;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.InetAddress;
-import java.util.*;
+import java.util.Enumeration;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Properties;
 
 /**
  * This is a class used to get the current environment
@@ -31,6 +36,7 @@ import java.util.*;
 public class Environment extends Properties {
 
   public Environment() throws IOException {
+	// pull request test
     // Extend this code to fit all operating
     // environments that you expect to run in
     // http://lopica.sourceforge.net/os.html
