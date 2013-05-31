@@ -14,3 +14,7 @@ This utility allows you to not only do [Hadoop-Streaming](http://hadoop.apache.o
       -file     "libDir/mapper3.py" \  
       -file     "libDir/reducer2.sh" \  
       -file     "libDir/reducer3.py"
+
+
+This Project is maven project. Simply build the maven project for making hadoop-multiple-streaming.jar file.
+In more detail, 'mvn clean package' command will compile source code and packaging to ${basedir}/target folder.
