@@ -18,20 +18,19 @@
 
 package org.apache.hadoop.streaming;
 
-import java.io.*;
-import java.lang.reflect.Constructor;
+import java.io.DataOutputStream;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
 import java.net.URLDecoder;
 import java.util.ArrayList;
 
-import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapred.JobConf;
 import org.apache.hadoop.mapred.Mapper;
-import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.OutputCollector;
+import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapred.SkipBadRecords;
 import org.apache.hadoop.mapred.TextInputFormat;
 import org.apache.hadoop.mapred.lib.MultipleOutputs;
-import org.apache.hadoop.streaming.StreamUtil;
 import org.apache.hadoop.util.StringUtils;
 
 /**

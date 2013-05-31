@@ -18,14 +18,12 @@
 
 package org.apache.hadoop.streaming;
 
-import org.apache.hadoop.mapred.MapRunner;
-import org.apache.hadoop.mapred.Reporter;
-import org.apache.hadoop.mapred.RecordReader;
-import org.apache.hadoop.mapred.OutputCollector;
-
 import java.io.IOException;
 
-import org.apache.hadoop.util.ReflectionUtils;
+import org.apache.hadoop.mapred.MapRunner;
+import org.apache.hadoop.mapred.OutputCollector;
+import org.apache.hadoop.mapred.RecordReader;
+import org.apache.hadoop.mapred.Reporter;
 
 public class MultiPipeMapRunner<K1, V1, K2, V2> extends MapRunner<K1, V1, K2, V2> {
   public void run(RecordReader<K1, V1> input, OutputCollector<K2, V2> output,
